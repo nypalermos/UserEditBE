@@ -5,15 +5,27 @@
   "main": "app.js",
   "scripts": {
     "test-dev": "set NODE_ENV=testing&&mocha ./**/*.test.js --recursive --reporter spec",
-    "test": "mocha ./**/*.test.js --recursive --reporter spec"
+    "test": "mocha ./**/*.test.js  --recursive --require --reporter spec"
   },
   "keywords": [],
   "author": "Leon Palermo <nypalermos@gmail.com>",
-  "license": "0BSD",
+  "license": "MIT",
   "dependencies": {
+    "assert": "^2.0.0",
     "chai": "^4.3.4",
     "dotenv": "^10.0.0",
     "enum": "^3.0.4",
-    "mocha": "^9.1.3"
+    "mocha": "^9.2.0",
+    "mocha-prepare": "^0.1.0",
+    "mongoose": "^6.1.8",
+    "mongodb-memory-server": "^8.2.0"
+  },
+  "config": {
+    "mongodbMemoryServer": {
+      "debug": "0"
+    }
+    "merge": {
+      "fail": "yes"
+    }
   }
 }
