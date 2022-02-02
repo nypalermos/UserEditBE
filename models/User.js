@@ -5,16 +5,17 @@ const Genders = new Enum({MALE: 'Male',FEMALE: 'Female',NON_BINARY: 'Non Binary'
 // Constructor
 function User(id, firstName, lastName, age, gender) {
   // always initialize all instance properties
-  this.Id = id;
-  this.FirstName = firstName;
-  this.LastName = lastName;
-  this.Age = age;
-  this.Gender = gender;
+  
+  this.id = id;
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.age = age;
+  this.gender = gender;
 }
 
 // class methods
 User.prototype.getFullName = function() {
-	return this.FirstName + " " + this.LastName;
+	return this.firstName + " " + this.lastName;
 };
 
 const Schema = {

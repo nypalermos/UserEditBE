@@ -27,8 +27,8 @@ describe("User Tests", function() {
     });
 	
     it("User Age Tests", function() {
-        expect(user.Age).to.be.above(40);
-        expect(user.Age).to.be.below(60);
+        expect(user.age).to.be.above(40);
+        expect(user.age).to.be.below(60);
     });
 	
 	it("Env Tests", function() {
